@@ -1,0 +1,51 @@
+.wrapper {
+  background-color: cornflowerblue;
+}
+
+aside {
+  background-color: palegoldenrod;
+}
+
+span.logo {
+  background-color: cadetblue;
+}
+
+.credits {
+  background-color: bisque;
+}
+
+main {
+  background-color: lightseagreen;
+}
+
+.top {
+  background-color: pink;
+}
+
+.top > p {
+  background-color: lightcyan;
+}
+
+.middle {
+  background-color: plum;
+}
+
+h1 {
+  background-color: aquamarine;
+}
+
+form > div {
+  background-color: burlywood;
+}
+
+label {
+  background-color: lightgreen;
+}
+
+.bottom {
+  background-color: mediumpurple;
+}
+
+.bottom > p {
+  background-color: rebeccapurple;
+}

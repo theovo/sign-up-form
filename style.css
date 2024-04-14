@@ -1,0 +1,215 @@
+@font-face {
+  font-family: Norse;
+  src: url(font/norse-bold.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+body {
+  background-color: rgb(243, 243, 243);
+
+  height: 100vh;
+
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin: auto;
+
+  min-width: 640px;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+aside {
+  position: relative;
+  width: 36%;
+  min-height: 400px;
+  height: 100%;
+  max-height: 1032px;
+
+  color: white;
+
+  background-image: url(img/bg.jpeg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+
+  position: relative;
+  top: 21.4%;
+  height: 144px;
+}
+
+img.logo {
+  height: 120px;
+}
+
+span.logo {
+  height: 68px;
+
+  font-family: Norse, sans-serif;
+  font-size: 5.5rem;
+}
+
+.credits {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+
+
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.credits > a {
+  text-decoration: underline;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  width: 64%;
+  min-height: 400px;
+  height: 100%;
+  max-height: 1032px;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.top,
+.middle,
+.bottom {
+  padding: 40px;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.top {
+  display: flex;
+  align-items: flex-end;
+
+  flex: 1.2 1 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: pre-line;
+}
+
+.top > h1 {
+  max-width: 704px;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 80px;
+
+  flex: 1 1 0;
+}
+
+.middle > h1 {
+  width: 100%;
+}
+
+.middle > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 280px;
+  flex-grow: 1;
+
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 6px 8px;
+  border: 1px solid #E5E7EB;
+}
+
+::placeholder {
+  color: lightgray;
+}
+
+input:focus:invalid {
+  border: 1px solid red;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+input:focus:valid {
+  border: 1px solid green;
+}
+
+input:user-valid {
+  border: 1px solid green;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  flex: 1.2 1 0;
+}
+
+button {
+  padding: 16px 0;
+  background-color: #596D48;
+
+  min-width: 160px;
+  width: 25%;
+
+  color: white;
+}
+
+.bottom > p {
+  padding: 16px 0;
+}
+
+.bottom a {
+  font-weight: 600;
+  color: #596D48;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
